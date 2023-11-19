@@ -18,6 +18,9 @@ public class PlayerBehavior : MonoBehaviour
     private Rigidbody _rb;
     private CapsuleCollider _col;
 
+    private int collectedPickUp;
+    public int _itemsCollected = 0;
+
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
@@ -74,4 +77,15 @@ public class PlayerBehavior : MonoBehaviour
 
         return grounded;
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("PickUp"))
+        {
+            collectedPickUp++;
+            Destroy(other.gameObject);
+           _itemsCollected++;
+        }
+    }
+
 }
