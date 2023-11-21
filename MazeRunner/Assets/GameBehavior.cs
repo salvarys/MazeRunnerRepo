@@ -11,7 +11,6 @@ public class GameBehavior : MonoBehaviour
     public bool showWinScreen = false;
 
     public PlayerBehavior player;
-
     public TMP_Text itemsText;
 
     public void Items()

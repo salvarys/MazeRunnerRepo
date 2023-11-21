@@ -460,7 +460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   labelText: Collect all to win!!!
-  maxItems: 3
+  maxItems: 1
   showWinScreen: 0
   player: {fileID: 1359518241}
   itemsText: {fileID: 267559525}
