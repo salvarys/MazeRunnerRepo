@@ -11,7 +11,7 @@ public class ItemBehavior : MonoBehaviour
         gameManager = GameObject.Find("GameBehavior").GetComponent<GameBehavior>();
     }
 
-  /*  void OnCollisionEnter(Collision collision)
+    /* void OnCollisionEnter(Collision collision)
     {
         //2
         if (collision.gameObject.name == "Player")
@@ -25,5 +25,5 @@ public class ItemBehavior : MonoBehaviour
             gameManager.Items += 1;
 
         }
-    } */
+    }*/
 } 
