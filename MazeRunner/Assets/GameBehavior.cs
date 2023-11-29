@@ -41,6 +41,44 @@ public class GameBehavior : MonoBehaviour
             labelText = "Item found, only" + (maxItems -
                 player._itemsCollected) + " more to go!";
         }
+        /* 
+         //Error checking 
+
+            if (player != null && maxItems > 0)
+            {
+                if (player._itemsCollected == maxItems)
+                 {
+                    labelText = "You've found all the items!";
+                    showWinScreen = true;
+                    Time.timeScale = 0f;
+                 }
+                else if (player._itemsCollected < maxItems)
+                {
+                    labelText = "Item found, only " + (maxItems - player._itemsCollected) + " more to go!";
+                }
+                else
+                {
+                  // Handle the case where _itemsCollected exceeds maxItems
+                     labelText = "Error: _itemsCollected exceeds maxItems!";
+                }
+               
+                 else
+                 {
+                  // Handle the case where player is null or maxItems is not a valid value
+                    labelText = "Error: Invalid player or maxItems value!";
+            }  
+
+        // While Loop demo 
+
+           while (player._itemsCollected < maxItems)
+            {
+                labelText = "Item found, only " + (maxItems - player._itemsCollected) + " more to go!";
+            }
+
+            labelText = "You've found all the items!";
+            showWinScreen = true;
+            Time.timeScale = 0f;
+         */
 
         if (showWinScreen)
         {

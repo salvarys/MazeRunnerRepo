@@ -11,19 +11,23 @@ public class ItemBehavior : MonoBehaviour
         gameManager = GameObject.Find("GameBehavior").GetComponent<GameBehavior>();
     }
 
+
+
     /* void OnCollisionEnter(Collision collision)
     {
-        //2
+        for (int i = 0; i < maxItems; i++)
+        {
+            gameManager.Items += 1;
+        }
+
         if (collision.gameObject.name == "Player")
         {
-            // 3
             Destroy(this.transform.parent.gameObject);
 
-            // 4 
             Debug.Log("Item collected!");
 
             gameManager.Items += 1;
 
         }
     }*/
-} 
+}
